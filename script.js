@@ -29,7 +29,7 @@
 // const num = (number) => {
 //   return number
 //     .toString()
-//     .split('')
+//     .split('23')
 //     .reduce((sum, digit) => sum + parseInt(digit), 0);
 // };
 // const number = parseInt(prompt("Son kiriting:"));
@@ -38,28 +38,32 @@
 
 
 // 2-misol
-// const sumAndArray = (...numbers) => {
+// const sumArr = (...numbers) => {
 //   const sum = numbers.reduce((total, num) => total + num, 0);
 //   return sum.toString().split('').map(Number);
 // };
-// const result = sumAndArray(1, 22, 3);
+// const result = sumArr(25, 3);
 // console.log(result);
 
-
 // 3-misol
-// const isPalindrome = (number) => {
-//   const str = number.toString();
-//   return str === str.split('').reverse().join('');
-// };
-// const checkSquarePalindrome = () => {
-//   const number = parseInt(prompt("Son kiriting:"));
-//   const square = number * number;
-//   const result = isPalindrome(square);
-//   console.log(`Kiritilgan son: ${number}`);
-//   console.log(`Sonning kvadrati: ${square}`);
-//   console.log(`Kvadrat palindrome: ${result ? "Ha, palindrome" : "Yo'q, palindrome emas"}`);
-// };
-// checkSquarePalindrome();
+// function isPalindrome(number) {
+//     const str = number.toString();
+//     const reversedStr = str.split('').reverse().join('');
+//     return str === reversedStr;
+// }
+// const userInput = prompt("Iltimos, son kiriting:");
+// const number = parseInt(userInput, 10);
+// if (isNaN(number)) {
+//     console.log("Kiritilgan qiymat son emas.");
+// } else {
+//     const square = number * number;
+//     console.log(`Sonning kvadrati: ${square}`);
+//     if (isPalindrome(square)) {
+//         console.log(`${square} - palindrome.`);
+//     } else {
+//         console.log(`${square} - palindrome emas.`);
+//     }
+// }
 
 
 // 4-misol
